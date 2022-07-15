@@ -1,0 +1,19 @@
+Sqlite
+Codes - supermarket sales - qno 15 - 20
+
+15.
+SELECT MAX(gross_margin_percentage), Branch, InvoiceID FROM COMPANY;
+16.
+SELECT MAX(gross_iincome), Gender, Total FROM COMPANY;
+17.
+SELECT MAX(gross_iincome), Customertype FROM COMPANY;
+18.
+SELECT MIN(gross_iincome), InvoiceID FROM COMPANY;
+19.
+SELECT MAX(Rating), Branch, Gender FROM COMPANY;
+20.
+SELECT MAX(gross_iincome), Branch, City FROM COMPANY;
+SELECT MAX(Rating), Branch, City FROM COMPANY;
+SELECT MIN(Tax), Branch, City FROM COMPANY;
+
+
