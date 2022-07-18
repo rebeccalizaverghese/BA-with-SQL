@@ -1,0 +1,32 @@
+SQLite - hrdatabase
+Codes
+
+SELECT * FROM HRDataset_v14;
+
+Q01. SELECT * FROM HRDataset_v14 WHERE Position = 'Production Technician I';   ANS (137)
+Q02. SELECT * FROM HRDataset_v14 WHERE GenderID = '1';   ANS (135)
+Q03. SELECT * FROM HRDataset_v14 WHERE ManagerID = '22'; ANS (21)
+Q04. SELECT * FROM HRDataset_v14 WHERE EmploymentStatus = 'Active'; A(207)
+Q05. SELECT * FROM HRDataset_v14 WHERE MaritalDesc = 'Married'; A(124)
+Q06. SELECT * FROM HRDataset_v14 WHERE SALARY < '60000' AND EmploymentStatus = 'Active';
+Q07. SELECT * FROM HRDataset_v14 WHERE POSITION = 'Production Technician II' ORDER BY EngagementSurvey DESC LIMIT 1;
+Q08. SELECT MAX (Salary), Position FROM HRDataset_v14;
+Q09. SELECT AVG(Salary) FROM HRDataset_v14;
+     SELECT * FROM HRDataset_v14 WHERE Salary < '69020.68';
+Q10. SELECT * FROM HRDataset_v14 WHERE Salary < '69020.68' AND EmpSatisfaction < '3'; 
+Q11. N/A
+Q12. N/A
+Q13. SELECT * FROM HRDataset_v14 WHERE PerfScoreID < '3'; A(31)
+Q14. SELECT * FROM HRDataset_v14 WHERE EmpStatusID = '5'; A(88)
+Q15. SELECT * FROM HRDataset_v14 WHERE Department = 'IT/IS'; A(50)
+Q16. SELECT count(DeptID) FROM HRDataset_v14 WHERE DeptID = '1';
+     SELECT count(DeptID) FROM HRDataset_v14 WHERE DeptID = '2';
+     SELECT count(DeptID) FROM HRDataset_v14 WHERE DeptID = '3';
+     SELECT count(DeptID) FROM HRDataset_v14 WHERE DeptID = '4';
+     SELECT count(DeptID) FROM HRDataset_v14 WHERE DeptID = '5';  A(DeptID - 5 - Production)
+Q17. SELECT count(Department), Department FROM HRDataset_v14 GROUP BY Department; A(DeptID - 2 - Executive office)
+Q18. SELECT EmpID, PerfScoreID FROM HRDataset_v14 GROUP BY PerfScoreID;
+Q19. SELECT MAX(Salary), FromDiversityJobFairID FROM HRDataset_v14;
+     SELECT * FROM HRDataset_v14 WHERE FromDiversityJobFairID > '0';
+Q20. SELECT * FROM HRDataset_v14 WHERE Termd > '0';
+Q21. SELECT count(Position), Position FROM HRDataset_v14 GROUP BY Position;
